@@ -1,16 +1,34 @@
 {
   flake.modules.nixos.users =
-    { config, ... }:
+    { config, pkgs, ... }:
     {
+
+      # create groups with <name> and <guid>
+      users.groups."gtom".gid = 1020;
+      users.groups."gtest".gid = 1030;
+
       users.users.${config.primaryUser} = {
-        description = config.profile.fullName;
-        extraGroups = [
-          "networkmanager"
-          "video"
-          "wheel"
-        ];
+        description = config.profile.fullname;
+        # shell = pkgs.zsh;
+        shell = pkgs.fish;
         isNormalUser = true;
+        uid = 1010;
+        group = "gtom";
+        #  password = "firstlogin";  # TODO change after first rebuild
+        extraGroups = [ "wheel"
+                        "networkmanager"
+                        "video" ];
       };
+
+      # users.users.${config.primaryUser} = {
+      #   description = config.profile.fullName;
+      #   extraGroups = [
+      #     "networkmanager"
+      #     "video"
+      #     "wheel"
+      #   ];
+      #   isNormalUser = true;
+      # };
 
       system.activationScripts.setUserAvatar.text = ''
         mkdir -p /var/lib/AccountsService/{icons,users}

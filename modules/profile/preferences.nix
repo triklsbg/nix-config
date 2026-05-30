@@ -107,9 +107,11 @@
       };
 
       config.profile = {
-        email = "alexander.nabokikh@olx.pl";
-        fullName = "Alexander Nabokikh";
-        gitKey = "C5810093";
+        email = "trikl@online.de";
+        fullName = "Th. Rikl";
+        # to sign git commits --> programs.git.signing.key
+        gitKey = "sOgflPjIb0fndlY3cblNWLDd5jmwy/39y9TJgJ0AlKM"; # "C5810093";
+        # output of: ssh-keygen -lf ...tom1_achse...
         avatar = ./avatar;
         wallpaper = ./wallpaper.jpg;
 
@@ -157,18 +159,18 @@
         };
 
         locale = {
-          timezone = "Europe/Warsaw";
-          default = "en_US.UTF-8";
+          timezone = "Europe/Berlin";
+          default = "de_DE.UTF-8";
           extra = {
-            LC_ADDRESS = "en_IE.UTF-8";
-            LC_IDENTIFICATION = "en_IE.UTF-8";
-            LC_MEASUREMENT = "en_IE.UTF-8";
-            LC_MONETARY = "en_IE.UTF-8";
-            LC_NAME = "en_IE.UTF-8";
-            LC_NUMERIC = "en_IE.UTF-8";
-            LC_PAPER = "en_IE.UTF-8";
-            LC_TELEPHONE = "en_IE.UTF-8";
-            LC_TIME = "en_IE.UTF-8";
+            LC_ADDRESS = "de_DE.UTF-8";
+            LC_IDENTIFICATION = "de_DE.UTF-8";
+            LC_MEASUREMENT = "de_DE.UTF-8";
+            LC_MONETARY = "de_DE.UTF-8";
+            LC_NAME = "de_DE.UTF-8";
+            LC_NUMERIC = "de_DE.UTF-8";
+            LC_PAPER = "de_DE.UTF-8";
+            LC_TELEPHONE = "de_DE.UTF-8";
+            LC_TIME = "de_DE.UTF-8";
           };
         };
       };
