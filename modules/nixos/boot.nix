@@ -18,7 +18,7 @@
 
     boot.loader = {
       grub = {
-        enable = false;
+        # enable = false;
         devices = [ "nodev" ];
         efiSupport = true;
         # enableCryptodisk =  true;

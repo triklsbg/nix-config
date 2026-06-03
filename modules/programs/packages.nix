@@ -12,6 +12,9 @@
           # awscli2   # tool to manage AWS services
           # brave
           google-chrome
+          ncdu
+          dfc
+          evil-helix
           # dig  # domain name server?
           eza
           fd     # fast find alternative
@@ -36,7 +39,7 @@
           raycast
         ]
         ++ lib.optionals (!pkgs.stdenv.hostPlatform.isDarwin) [
-          anki   # repetition of flashcards, Lernprogramm
+          # anki   # repetition of flashcards, Lernprogramm
           gcc
           gnumake
           killall

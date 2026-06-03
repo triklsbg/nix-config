@@ -16,11 +16,13 @@
 
           terminal = {
             shell.program = "${pkgs.zsh}/bin/zsh";
-            shell.args = [
-              "-l"
-              "-c"
-              "tmux attach || tmux"
-            ];
+            #
+            # trikl: no tmux start with shell! TODO
+            # shell.args = [
+            #   "-l"
+            #   "-c"
+            #   "tmux attach || tmux"
+            # ];
           };
 
           window = {
