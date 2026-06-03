@@ -19,7 +19,7 @@ in
       nixos.audio
       nixos.bluetooth
       nixos.boot
-      nixos.containers
+      # nixos.containers  # trikl not needed
       nixos.locale
       nixos.networking
       nixos.services
@@ -44,7 +44,7 @@ in
     imports = [
       generic.profile
       homeManager.alacritty
-      homeManager.atuin
+      homeManager.atuin      # network wide shell history, sql-lite based
       homeManager.bat
       homeManager.btop
       homeManager.catppuccin
@@ -55,13 +55,13 @@ in
       homeManager.git
       homeManager.go
       homeManager.gpg
-      homeManager.granted
-      homeManager.k8s
-      homeManager.mcp
+      # homeManager.granted   # way to access AWS
+      # homeManager.k8s         # kybernetes super power
+      # homeManager.mcp
       homeManager.neovim
-      homeManager.opencode
+      homeManager.opencode      # AI coding agent
       homeManager.packages
-      homeManager.scripts
+      homeManager.scripts       # dir with bash/python... scripts
       homeManager.starship
       homeManager.tmux
       homeManager.zsh

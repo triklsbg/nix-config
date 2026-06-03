@@ -9,37 +9,38 @@
       home.packages =
         with pkgs;
         [
-          awscli2
-          brave
-          dig
+          # awscli2   # tool to manage AWS services
+          # brave
+          google-chrome
+          # dig  # domain name server?
           eza
-          fd
-          jq
-          nh
+          fd     # fast find alternative
+          jq     # json processor
+          nh     # nix helper
           nodejs
-          openconnect
-          opentofu
-          pipenv
-          podman-compose
-          podman-tui
+          # openconnect   # vpn client for cisco anyconnect
+          # opentofu      # drop in replacement for terraform???
+          # pipenv        # python devel workflow
+          # podman-compose  # docker compose with podman backend
+          # podman-tui      #
           python3
           ripgrep
-          telegram-desktop
+          # telegram-desktop
         ]
         ++ lib.optionals pkgs.stdenv.hostPlatform.isDarwin [
-          anki-bin
-          colima
+          # anki-bin
+          # colima  # container runtimes
           hidden-bar
-          mos
-          podman
+          # mos  # smoth scrolling on macOS
+          # podman
           raycast
         ]
         ++ lib.optionals (!pkgs.stdenv.hostPlatform.isDarwin) [
-          anki
+          anki   # repetition of flashcards, Lernprogramm
           gcc
           gnumake
           killall
-          tesseract
+          tesseract  # OCR engine
           unzip
           wl-clipboard
         ];

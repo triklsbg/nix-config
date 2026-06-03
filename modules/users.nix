@@ -8,9 +8,9 @@
       users.groups."gtest".gid = 1030;
 
       users.users.${config.primaryUser} = {
-        description = config.profile.fullname;
+        # description = ${config.primayUser}.fullname;
         # shell = pkgs.zsh;
-        shell = pkgs.fish;
+        # shell = pkgs.fish;
         isNormalUser = true;
         uid = 1010;
         group = "gtom";

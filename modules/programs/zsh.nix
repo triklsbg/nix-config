@@ -25,50 +25,10 @@
           gco = "git checkout";
           ggl = "git pull";
           ggp = "git push";
-
-          # OpenTofu/Terraform compatibility
-          terraform = "tofu";
-
-          # kubectl
-          k = "kubectl";
-          kctx = "kubectx";
-          kns = "kubens";
-          kgno = "kubectl get node";
-          kdno = "kubectl describe node";
-          kgp = "kubectl get pods";
-          kep = "kubectl edit pods";
-          kdp = "kubectl describe pods";
-          kdelp = "kubectl delete pods";
-          kgs = "kubectl get svc";
-          kes = "kubectl edit svc";
-          kds = "kubectl describe svc";
-          kdels = "kubectl delete svc";
-          kgi = "kubectl get ingress";
-          kei = "kubectl edit ingress";
-          kdi = "kubectl describe ingress";
-          kdeli = "kubectl delete ingress";
-          kgns = "kubectl get namespaces";
-          kens = "kubectl edit namespace";
-          kdns = "kubectl describe namespace";
-          kdelns = "kubectl delete namespace";
-          kgd = "kubectl get deployment";
-          ked = "kubectl edit deployment";
-          kdd = "kubectl describe deployment";
-          kdeld = "kubectl delete deployment";
-          kgsec = "kubectl get secret";
-          kdsec = "kubectl describe secret";
-          kdelsec = "kubectl delete secret";
+          gst = "git status";
 
           lg = "lazygit";
 
-          pt = "podman-tui";
-
-          repo = "cd $HOME/Documents/repositories";
-          temp = "cd $HOME/Downloads/temp";
-
-          v = "nvim";
-          vi = "nvim";
-          vim = "nvim";
 
           ls = "eza --icons always"; # default view
           ll = "eza -bhl --icons --group-directories-first"; # long list
@@ -76,7 +36,7 @@
           lt = "eza --tree --level=2 --icons"; # tree
         }
         // lib.optionalAttrs pkgs.stdenv.hostPlatform.isLinux {
-          open = "xdg-open";
+          open = "xdg-open";   # TODO study
         };
         initContent = ''
           # bindings
