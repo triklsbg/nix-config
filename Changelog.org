@@ -1,0 +1,27 @@
+#+title: Changelog
+
+#+author: trikl
+
+#+project: alexnabo noctalia desktop
+
+* Todo
+- make gb keyboard available
+- introduce host-wide programs/utilities
+- make Caps-Lock the Super- resp. Mod-Key
+- intro of ssh-keys
+
+
+* Essential Changes Done
+- boot with grup.cfg
+- added user with self chosen uid,gid
+- added fish shell
+- dropped superflouos programs, cloud computing things
+- dropped tmux integration
+
+
+* Missing
+
+- basic description of whole system
+- describe the setup process as an installation from a boot-cd, not from a installed system
+- Cheat-sheet for keybindings of hyperland / noctalia
+- description of tmux integration
