@@ -25,6 +25,7 @@ in
       nixos.services
       nixos.users
       nixos.zsh
+      nixos.fish  # similiar to nixos.zsh trikl
     ];
     home-manager.sharedModules = [ homeManager.base ];
   };

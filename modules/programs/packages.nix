@@ -43,6 +43,7 @@
           tesseract  # OCR engine
           unzip
           wl-clipboard
+          emacs-pgtk
         ];
     };
 }
