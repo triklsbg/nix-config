@@ -9,6 +9,7 @@
 - introduce host-wide programs/utilities
 - make Caps-Lock the Super- resp. Mod-Key
 - intro of ssh-keys
+- install doom emacs
 
 
 * Essential Changes Done
@@ -25,3 +26,6 @@
 - describe the setup process as an installation from a boot-cd, not from a installed system
 - Cheat-sheet for keybindings of hyperland / noctalia
 - description of tmux integration
+
+* Fazit / Assessment
+too incomplete (in parts to specialized ) to serve as a template
