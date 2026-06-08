@@ -35,12 +35,21 @@ in
         icon = "system-log-out";
       };
 
+      # default config file in niri source directory
+      # https://github.com/niri-wm/niri/blob/main/resources/default-config.kdl
+
       xdg.configFile."niri/config.kdl".text = ''
         // Input device settings
         input {
             keyboard {
                 xkb {
-                    layout "pl,ru"
+                 // trikl  gb for great-britain // layout "pl,ru"
+                    layout "gb"
+                 // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+                    options "caps:super"
+                 // If this section is empty, niri will fetch xkb settings
+                 // from org.freedesktop.locale1. You can control these using
+                 // localectl set-x11-keymap.
                 }
                 repeat-delay 250
                 repeat-rate 40
@@ -143,7 +152,8 @@ in
 
         // Workspace assignments
         window-rule {
-            match app-id=r#"^brave-browser$"#
+            // trikl match app-id=r#"^brave-browser$"#
+            match app-id=r#"^google-chrome$"#
             default-column-width { proportion 1.0; }
             open-on-workspace "main"
         }
@@ -221,7 +231,7 @@ in
 
             // Launch applications
             Mod+Shift+Return hotkey-overlay-title="Open Terminal" { spawn "alacritty"; }
-            Mod+Shift+B hotkey-overlay-title="Open Brave" { spawn "brave"; }
+            Mod+Shift+B hotkey-overlay-title="Open Google-Chrome" { spawn "google-chrome"; }
             Mod+Shift+F hotkey-overlay-title="Open Nautilus" { spawn "nautilus"; }
             Mod+Shift+T hotkey-overlay-title="Open Telegram" { spawn "Telegram"; }
             Ctrl+Alt+P hotkey-overlay-title="Toggle Pomodoro" { spawn-sh "gnome-pomodoro --start-stop"; }

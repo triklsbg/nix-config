@@ -39,8 +39,11 @@ in
 
         settings.config = {
           input = {
-            kb_layout = "pl,ru";
-            kb_options = "grp:win_space_toggle";
+            kb_layout = "gb,de";   # "pl,ru"; # trikl;
+            # kb_options = "grp:win_space_toggle";  # toggle kb_layout ... next language
+            kb_options = "caps:super";   # make caps an additional SUPER
+            # kb_options = "caps:hyper"; # make caps an additional HYPER
+            # the "WIN" is generally interpreted as s or super in emacs
             repeat_delay = 250;
             repeat_rate = 40;
 

@@ -20,7 +20,7 @@
       grub = {
         # enable = false;
         devices = [ "nodev" ];
-        efiSupport = true;
+#        efiSupport = true;
         # enableCryptodisk =  true;
         # useOSProber = true; # yes there is a windows 11 nearby
       };

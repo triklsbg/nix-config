@@ -40,6 +40,7 @@
         ]
         ++ lib.optionals (!pkgs.stdenv.hostPlatform.isDarwin) [
           # anki   # repetition of flashcards, Lernprogramm
+          #
           gcc
           gnumake
           killall
