@@ -11,7 +11,7 @@ in
       ./_hardware_p7.nix
       nixos.base
       nixos.hyprland
-       nixos.gaming
+       # nixos.gaming
     ];
 
     primaryUser = "tom1";

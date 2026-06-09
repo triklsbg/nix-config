@@ -3,7 +3,7 @@
     { config, pkgs, ... }:
     {
       programs.fish.enable = true;
-      # users.users.${config.primaryUser}.shell = pkgs.fish;
+      users.users.${config.primaryUser}.shell = pkgs.fish;
     };
 
   flake.modules.darwin.fish = {

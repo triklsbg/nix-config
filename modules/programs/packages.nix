@@ -48,6 +48,7 @@
           unzip
           wl-clipboard
           emacs-pgtk
+          nixd   # lsp lang server for doom
         ];
     };
 }

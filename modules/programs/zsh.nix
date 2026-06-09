@@ -3,7 +3,7 @@
     { config, pkgs, ... }:
     {
       programs.zsh.enable = true;
-      users.users.${config.primaryUser}.shell = pkgs.zsh;
+      # users.users.${config.primaryUser}.shell = pkgs.zsh;
     };
 
   flake.modules.homeManager.zsh =

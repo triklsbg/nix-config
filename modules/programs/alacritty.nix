@@ -15,7 +15,8 @@
           };
 
           terminal = {
-            shell.program = "${pkgs.zsh}/bin/zsh";
+            # shell.program = "${pkgs.zsh}/bin/zsh";
+            shell.program = "${pkgs.zsh}/bin/fish";
             #
             # trikl: no tmux start with shell! TODO
             # shell.args = [
