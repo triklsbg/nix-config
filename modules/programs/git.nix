@@ -13,8 +13,9 @@
             pull.rebase = true;
           };
           signing = {
-            key = config.profile.gitKey;
-            signByDefault = true;
+            # trikl: troubles magit if no key available/defined
+            # key = config.profile.gitKey;
+            # signByDefault = true;
           };
         };
 

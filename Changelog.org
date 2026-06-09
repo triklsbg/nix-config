@@ -5,11 +5,11 @@
 #+project: alexnabo noctalia desktop
 
 * Todo
-- make gb keyboard available
 - introduce host-wide programs/utilities
-- make Caps-Lock the Super- resp. Mod-Key
 - intro of ssh-keys
-- install doom emacs
+- autologin
+- autostart of terminals, browser and emacs
+- clearify sign key of git, no valid key no commits in magit
 
 
 * Essential Changes Done
@@ -18,6 +18,10 @@
 - added fish shell
 - dropped superflouos programs, cloud computing things
 - dropped tmux integration
+- make gb keyboard available
+- make Caps-Lock the Super- resp. Mod-Key
+- install doom emacs
+- separated parts of hyprland config in lua file
 
 
 * Missing
