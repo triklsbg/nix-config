@@ -5,7 +5,11 @@ in
 {
   flake.modules.nixos.compositorCommon = {
     services = {
-      displayManager.gdm.enable = true;
+      displayManager = {
+        gdm.enable = true;
+        autoLogin.enable = true;
+        autoLogin.user = "tom1";     # trikl
+      };
       power-profiles-daemon.enable = true;
       upower.enable = true;
       gnome.gnome-keyring.enable = true;

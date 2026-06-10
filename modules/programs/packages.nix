@@ -50,6 +50,9 @@
           emacs-pgtk
           nixd   # lsp lang server for doom
           ghostty
+          nixfmt
+          stylua  # format lua code
+          lua-language-server  # doom misses it
 
         ];
     };

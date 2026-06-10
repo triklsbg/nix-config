@@ -10,7 +10,10 @@
 - autologin
 - autostart of terminals, browser and emacs
 - clearify sign key of git, no valid key no commits in magit
+- make doom lua sensitive esp. formatter
 
+* Periodic Todo
+- rebase trikl branch on alexnabo.main
 
 * Essential Changes Done
 - boot with grup.cfg
@@ -25,6 +28,9 @@
 - nixd language server
 - fish as default shell
 - added _hyprland_example.lua
+- examined hyprland autostart option, several apps in specific workspaces
+- configured gdm autologin
+- better configuration of night shift redlighting fuck, DONE via noctalia control-center
 
 * Missing
 

@@ -115,9 +115,16 @@
         avatar = ./avatar;
         wallpaper = ./wallpaper.jpg;
 
+        # "catppuccin" is a theming framework like "stylix"
+        # they contain colorthemes for many apps, desktop-utilities etc.
         appearance = {
           catppuccin = {
+            # Type one of: "latte", "frappe", "macchiato", "mocha"
             flavor = "mocha";
+
+            # Type accent one of:
+            #  "blue", "flamingo", "green", "lavender", "maroon", "mauve", "peach", "pink",
+            #  "red", "rosewater", "sapphire", "sky", "teal", "yellow"
             accent = "lavender";
           };
 
