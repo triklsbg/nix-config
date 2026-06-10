@@ -22,7 +22,9 @@
 - make Caps-Lock the Super- resp. Mod-Key
 - install doom emacs
 - separated parts of hyprland config in lua file
-
+- nixd language server
+- fish as default shell
+- added _hyprland_example.lua
 
 * Missing
 
