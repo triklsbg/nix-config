@@ -31,6 +31,8 @@
 - examined hyprland autostart option, several apps in specific workspaces
 - configured gdm autologin
 - better configuration of night shift redlighting fuck, DONE via noctalia control-center
+- lua-language-server plus semrep installed
+
 
 * Missing
 

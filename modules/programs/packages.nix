@@ -51,9 +51,11 @@
           nixd   # lsp lang server for doom
           ghostty
           nixfmt
+          lua
           stylua  # format lua code
           lua-language-server  # doom misses it
-
+          semgrep              # lsp lua longs for it
+          symbola              # fallback font for emacs
         ];
     };
 }

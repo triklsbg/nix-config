@@ -462,7 +462,8 @@
         nightLight = {
           autoSchedule = false;
           dayTemp = "6500";
-          enabled = true;
+          # enabled = true;  # irritates me trikl
+          enabled = false;
           forced = false;
           manualSunrise = "06:00";
           manualSunset = "20:00";
