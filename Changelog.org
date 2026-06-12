@@ -1,8 +1,24 @@
+# -*- fill-column: 75; -*-
+# fill-paragraph with "M-q" + be happy!
+
 #+title: Changelog
 
 #+author: trikl
 
 #+project: alexnabo noctalia desktop
+
+* Fazit / Assessment (<2026-06-12>)
+too incomplete (in parts to specialized ) to serve as a template
+
+- no printing
+- no slots for hostwide things like locate or mlocate
+- xkb settings only within hyprland
+- niri mentioned but not used
+- uses catppucin color scheme instead *stylix*
+- no comments in the nix-configs to ease up further customizing
+- initial forced to sign git operatations: default no signing plus commment how
+  to enable would do the job
+
 
 * Todo
 - introduce host-wide programs/utilities
@@ -11,6 +27,7 @@
 - autostart of terminals, browser and emacs
 - clearify sign key of git, no valid key no commits in magit
 - make doom lua sensitive esp. formatter
+- install zoxoid directory changer
 
 * Periodic Todo
 - rebase trikl branch on alexnabo.main
@@ -30,16 +47,16 @@
 - added _hyprland_example.lua
 - examined hyprland autostart option, several apps in specific workspaces
 - configured gdm autologin
-- better configuration of night shift redlighting fuck, DONE via noctalia control-center
+- better configuration of night shift redlighting fuck, DONE via noctalia
+  control-center
 - lua-language-server plus semrep installed
 
 
 * Missing
 
 - basic description of whole system
-- describe the setup process as an installation from a boot-cd, not from a installed system
+- describe the setup process as an installation from a boot-cd, not from a
+  installed system
 - Cheat-sheet for keybindings of hyperland / noctalia
 - description of tmux integration
 
-* Fazit / Assessment
-too incomplete (in parts to specialized ) to serve as a template

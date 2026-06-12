@@ -8,6 +8,8 @@ hl.on("hyprland.start", function()
   --   -- Terminal on workspace 1
   hl.exec_cmd(terminal, { workspace = "1 silent" })
   hl.exec_cmd("google-chrome", { workspace = "2 silent" })
+  hl.exec_cmd(terminal, { workspace = "2 silent" , size = "40% 100%" , move = "right", })
+  hl.exec_cmd("emacs", { workspace = "3 silent" })
   -- hl.exec_cmd("[workspace 4 silent] ghostty")
 
   --   hl.exec_cmd("waybar & hyprpaper & firefox")
