@@ -110,8 +110,9 @@
         email = "trikl@online.de";
         fullName = "Th. Rikl";
         # to sign git commits --> programs.git.signing.key
-        gitKey = "sOgflPjIb0fndlY3cblNWLDd5jmwy/39y9TJgJ0AlKM"; # "C5810093";
-        # output of: ssh-keygen -lf ...tom1_achse...
+        gitKey = "blahblah";  # "C5810093";
+        # gpg --list-keys --keyid-format=short
+        # Short Key ID = last 8 characters of that fingerprint.
         avatar = ./avatar;
         wallpaper = ./wallpaper.jpg;
 
